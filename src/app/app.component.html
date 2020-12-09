@@ -1,0 +1,7 @@
+<div>
+    <input type="text" placeholder="Add to todo list" [(ngModel)]="newItem" (keydown.enter)="addList()"/>
+    <button (click)="addList()">Add</button>
+    <input type="text" placeholder="Search with starting characters" [(ngModel)]="search" (keydown.enter)="searchItem()"/>
+
+    <list [searchResult]=searchResult (del)="delete($event)"></list>
+</div>

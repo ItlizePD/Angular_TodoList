@@ -1,0 +1,3 @@
+<div *ngFor="let x of lists; let index = index;"  (mouseover)="changeColor($event)" (mouseleave)="recoverColor($event)" (click)="deleteItem(index)"> 
+    {{x}}
+</div> 
